@@ -1,0 +1,20 @@
+using Unity.Mathematics;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+
+public class DialRot : XRGrabInteractable
+{
+    public quaternion startingRotation;
+    public quaternion currentRotation;
+
+    private void Start()
+    {
+        startingRotation = transform.rotation;
+    }
+
+    private void Update()
+    {
+        //quaternion newRot = new quaternion(startingRotation.value.x,startingRotation.value.y,transform.rotation.z,transform.rotation.w);
+        //transform.rotation = newRot;
+        //currentRotation = transform.rotation;
+    }
+}
